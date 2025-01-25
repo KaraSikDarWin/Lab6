@@ -1,0 +1,24 @@
+block variables
+doctype html
+html(lang="ru")
+	head
+	title #{title}
+	link(rel="stylesheet", href="styles1.css")
+	body
+	block header
+		header.header
+			.header_search-bar
+				input.header_search-bar_input(type="text", placeholder="Введите запрос...")
+				button.header_search-bar_button 🔍
+			nav.header_menu
+				a.header_menu-link(href="index.html") #{menu_button1}
+				a.header_menu-link(href="tablepage.html") #{menu_button2}
+				a.header_menu-link(href="id.html") #{menu_button3}
+			h1.header_title #{main_header}
+	block content
+	block footer
+		footer.footer
+			p © Ослонов К.С., Б9122-09.03.04, 2024-2025
+			a.footer_contacts(href="https://t.me/speedcubing_dv") Контакты
+
+  

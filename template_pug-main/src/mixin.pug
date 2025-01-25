@@ -1,0 +1,9 @@
+mixin listItems(items, isOrdered)
+  if isOrdered == 1
+    ol
+      each item in items
+        li= item
+  if isOrdered == 0
+    ul
+      each item in items
+        li= item

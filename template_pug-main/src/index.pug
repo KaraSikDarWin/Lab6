@@ -1,0 +1,64 @@
+extends template
+block variables
+	- var title = 'Главная страница'
+	- var menu_button1 = 'Главная'
+	- var menu_button2 = 'FEFU Dragon Race 2023'
+	- var menu_button3 = 'История спидкубинга'
+	- var main_header = 'ASAP_speedcubing'
+block content
+	main.main
+	section.main__top-section
+		.main__large-block
+			.main__image-large
+				img(src=require("./images/fed.png"), alt="Федерация спидкубинга")
+			h2.main__heading Федерация спидкубинга
+			p.main__text Во Владивостоке существует региональное отделение Федерации спидкубинга Приморского края, которое занимается развитием и популяризацие спидкубинга в Приморском крае и на Дальнем востоке.
+		.main__large-block
+			.main__image-large
+				img(src=require("./images/ASAPP.png"))
+			h2.main__heading ASAP_speedcubing
+			p.main__text Студенческая организация в Дальневосточном федеральном университете, которая занимается развитие и популяризацией спидкубинга на территоррии университета.
+
+	section.main__grid-section
+		.main__small-block
+			.main__top-content
+				.main__image
+					img(src=require("./images/MK.png"))
+				h3.main__heading Основная деятельность организации
+			p.main__text Основной деятельностью организации является проведение мероприятий, посвящённых спидкубингу на территории ДВФУ, а также Приморского края.
+
+		.main__small-block
+			.main__top-content
+				.main__image
+					img(src=require("./images/comp.png"))
+				h3.main__heading Мероприятия
+			p.main__text За два года существования организации ASAP_speedcubing, команда организаторов успела поучаствовать во многих городских, а также университетских мероприятиях.
+
+		.main__small-block
+			.main__top-content
+				.main__image
+					img(src=require("./images/spee.png"))
+				h3.main__heading Спидкубинг
+			p.main__text Спидкубинг — это скоростная сборка кубика Рубика и других головоломок.
+
+		.main__small-block
+			.main__top-content
+				.main__image
+					img(src=require("./images/target.png"))
+				h3.main__heading Наша цель
+			p.main__text Мы заинтересованы в развитии и популяризации спидкубинга, и работаем над тем, чтобы у студентов ДВФУ была возможность самореализоваться.
+
+		.main__small-block
+			.main__top-content
+				.main__image
+					img(src=require("./images/kart.png"))
+				h3.main__heading Картины
+			p.main__text Мы являемся единственными, кто собирает картины из кубиков Рубика. Наши запасы составляют более 8000 кубиков!!!
+
+		.main__small-block
+			.main__top-content
+				.main__image
+					img(src=require("./images/nagr.png"))
+				h3.main__heading Награды
+			p.main__text Наша команда стала лауреатом премии "Аякс" 2023 в номинации "Старт года", а также руководитель организации является номинантом на звание "Персона года в общественной деятельности".
+	

@@ -1,0 +1,264 @@
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+
+body
+  font-family Arial, sans-serif
+  line-height 1.5
+  background-color #f9f9f9
+  background url("back11.png")
+
+.header
+  background url('back.png') no-repeat center center / cover
+  padding 20px
+  text-align center
+  color white
+
+.header_search-bar
+  display flex
+  justify-content center
+  align-items center
+  margin-bottom 15px
+
+.header_search-bar_input
+  width 60%
+  max-width 400px
+  padding 10px
+  border 1px solid #ccc
+  border-radius 20px 0 0 20px
+  outline none
+  font-size 16px
+
+.header_search-bar_button
+  padding 10px 20px
+  background-color #0078d7
+  border none
+  border-radius 0 20px 20px 0
+  color white
+  cursor pointer
+  font-size 16px
+  &:hover
+    background-color #005fa3
+
+.header_menu
+  display flex
+  justify-content center
+  gap 20px
+  margin-bottom 70px
+
+.header_menu-link
+  color white
+  text-decoration none
+  font-weight bold
+  font-size 1.6em
+.header_menu-link:hover
+  color: #007BFF
+  text-shadow: 0 2px 4px rgba(0, 123, 255, 0.6)
+  transform: scale(1.05)
+
+.header_title
+  font-size 1.8em
+  margin-top 10px
+  
+.footer
+  background-color #333
+  color white
+  text-align center
+  padding 10px
+  margin-top 20px
+  
+.footer_contacts
+  color lightblue
+  text-decoration none
+  margin-left 10px
+  
+.main
+  padding 20px
+
+.main__top-section
+  display flex
+  gap 20px
+  margin-bottom 20px
+
+.main__large-block
+  flex 1
+  background-color #eaf7ff
+  text-align center
+  padding 10px
+
+.main__image-large
+  background-color #a8d0e6
+  height 150px
+  margin-bottom 10px
+
+.main__image-large img
+  height 100%
+  width 100%
+  
+
+.main__grid-section
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  gap 15px
+
+.main__small-block
+  background-color #eaf7ff
+  padding 10px
+  display flex
+  flex-direction column
+
+.main__top-content
+  display flex
+  align-items center
+  gap 10px
+  margin-bottom 10px
+
+.main__image
+  background-color #d5e7ff
+  height 50px
+  width 50%
+
+.main__image img
+  height 100%
+  width 100%
+
+.main__heading
+  font-size 1.2em
+
+.main__text
+  color gray
+
+.container
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(300px, 1fr))
+  gap 20px
+  padding 20px
+
+.section
+  background-color #a8d0e6
+  padding 20px
+  border-radius 10px
+  box-shadow 0 2px 5px rgba(0, 0, 0, 0.1)
+  img
+    width 100%
+    border-radius 10px
+    margin-top 10px
+    box-shadow 0 2px 5px rgba(0, 0, 0, 0.1)
+  img:hover
+    transform: scale(1.1)
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+
+ul
+  padding-left 20px
+
+table
+  width 80%
+  margin 20px auto
+  border-collapse collapse
+  background-color #007BFF
+
+th, td
+  padding 10px
+  text-align center
+  border 1px solid #ffcc00
+
+th
+  background-color red
+  color white
+
+td
+  background-color #007BFF
+
+details
+  background-color #ffffff
+  border 1px solid #ddd
+  border-radius 8px
+  padding 20px
+  margin 10px
+  width 45%
+  box-shadow 0 4px 8px rgba(0, 0, 0, 0.1)
+  display inline-block
+  vertical-align top
+
+summary
+  font-size 1.2em
+  font-weight bold
+  color #2c3e50
+  cursor pointer
+  padding 10px
+  border-bottom 2px solid #ddd
+  &:hover
+    background-color #ecf0f1
+
+form
+  display flex
+  flex-direction column
+  gap 10px
+  margin 10px 0
+
+label
+  font-size 1em
+  color #34495e
+
+input[type="text"], input[type="number"]
+  padding 8px
+  font-size 1em
+  border 1px solid #ccc
+  border-radius 5px
+
+input[type="submit"]
+  padding 10px 20px
+  font-size 1em
+  border none
+  background-color #3498db
+  color white
+  border-radius 5px
+  cursor pointer
+  transition background-color 0.3s
+
+input[type="submit"]:hover
+  background-color #2980b9
+
+h3
+  font-size 1.2em
+  color #2c3e50
+  margin-bottom 10px
+
+b
+  font-weight bold
+
+.checkbox-group
+  display flex
+  flex-direction column
+  gap 5px
+
+.radio-group
+  display flex
+  flex-direction column
+  gap 5px
+
+.graph-section
+  margin-top 20px
+  border-top 2px solid #ddd
+  padding-top 10px
+  input[type="submit"]
+    margin-top 10px
+
+@media (max-width: 1100px)
+  .top-section
+    flex-direction column
+  .grid-section
+    grid-template-columns 1fr
+
+  .container
+     grid-template-columns 1fr 1fr
+	 
+@media (max-width: 700px)
+  .container
+     grid-template-columns 1fr
+	 
+  .main__top-section
+    flex-direction column
+  .main__grid-section
+    grid-template-columns 1fr
